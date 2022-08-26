@@ -9,7 +9,7 @@ let fullName = firstName + ' ' + lastName;
 // 4 - Console log the value of `fullName`
 console.log(fullName);
 // 5 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
-let luckyNumber = 3
+let luckyNumber = 2
 // 6 - Console log this sentence, adding in the variables you created above: 
 // 'My name is (full name), and I think (lucky number) is a winner!'.
 // Refer back to the videos if you need help with this one.
@@ -28,7 +28,7 @@ pets += 2;
 const allowedPets = 2;
 // 13 - Create a conditional: if adventurous is true, console log "Adventures are great!", 
 // if it's not true, console log "How about we stay home?"
-if (adventurous === true){
+if (adventurous){
     console.log("Adventures are great!")}
     else {
         console.log("How about we stay home?");
@@ -37,7 +37,7 @@ if (adventurous === true){
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
 
-if(luckyNumber === 2 && adventurous=== true){
+if(luckyNumber === 2 && adventurous){
     console.log('Roll the dice!');
 }
 
@@ -66,16 +66,16 @@ else if(pets === allowedPets){
 // be sure to think through all the scenarios. 
 // console.log `mostPets` after the conditional has run.
 let mostPets 
-friendsPets =2
+friendsPets =1
 if(pets < friendsPets){
     mostPets=friendsPets;
-    console.log('My friends have', mostPets, 'pets. I only have', pets,'.')
+    console.log(`My friend has ${mostPets} pets. I only have ${pets}.`)
 } else if(pets > friendsPets){
     mostPets=pets;
-    console.log('I have', pets, 'pets. My friend has', friendsPets,'.');
+    console.log(`I have ${pets} pets. My friend has ${friendsPets}.`);
 } else{
     mostPets = pets;
-    console.log('We both have', mostPets, 'pets each.')
+    console.log(`We both have ${mostPets} pets each.`)
 }
 
 
@@ -88,7 +88,7 @@ if(pets < friendsPets){
 //      You'll need to research how to use switch statements!
 
 
-luckyNumber=3
+luckyNumber=2
 
 switch(luckyNumber){
     case 1:
@@ -109,7 +109,11 @@ switch(luckyNumber){
 
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
 
-luckyNumber = 1 ? 'first is the worst' 
-    : 2 ? 'Second is the best'
-    : 3 ? 'Third is the one with the polka dot dress'
-    : 'Luck is what happens when preparation meets opportunity'
+luckyNumber = 7
+
+luckyNumber === 1 ? console.log('First is the worst' )
+    : luckyNumber === 2 ? console.log('Second is the best')
+    : luckyNumber === 3 ? console.log('Third is the one with the polka dot dress')
+    : console.log('Luck is what happens when preparation meets opportunity')
+
+    //console.log(luckyNumber)
